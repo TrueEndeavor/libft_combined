@@ -6,7 +6,7 @@
 #    By: lannur-s <lannur-s@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/02 12:46:34 by lannur-s          #+#    #+#              #
-#    Updated: 2023/08/15 12:39:41 by lannur-s         ###   ########.fr        #
+#    Updated: 2023/08/15 13:09:21 by lannur-s         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,59 +33,59 @@ CFLAGS = -Wall -Wextra -Werror
 AR = ar
 ARFLAGS = rcs
 
-INCLUDES = -I./includes
+INCLUDES = -I./include
 
 # Mandatory source (.c) files
-SRCS = sources/conversion/ft_atoi.c \
-		sources/conversion/ft_itoa.c \
-		sources/ctype/ft_isalnum.c \
-		sources/ctype/ft_isalpha.c \
-		sources/ctype/ft_isascii.c \
-		sources/ctype/ft_isdigit.c \
-		sources/ctype/ft_isprint.c \
-        sources/ctype/ft_tolower.c \
-        sources/ctype/ft_toupper.c \
-		sources/io/ft_printf/ft_printf.c \
-		sources/io/ft_printf/print_char.c \
-		sources/io/ft_printf/print_nbr_base.c \
-		sources/io/ft_printf/print_nbr_signed.c \
-		sources/io/ft_printf/print_string.c \
-		sources/io/get_next_line/get_next_line.c \
-		sources/io/get_next_line/get_next_line_utils.c \
-		sources/io/ft_putchar_fd.c \
-		sources/io/ft_putendl_fd.c \
-	   	sources/io/ft_putstr_fd.c \
-	    sources/io/ft_putnbr_fd.c \
-		sources/linkedlist/ft_lstadd_back.c \
-	    sources/linkedlist/ft_lstadd_front.c \
-		sources/linkedlist/ft_lstdelone.c \
- 		sources/linkedlist/ft_lstiter.c \
-		sources/linkedlist/ft_lstlast.c \
-		sources/linkedlist/ft_lstmap.c \
-	    sources/linkedlist/ft_lstnew.c \
-		sources/linkedlist/ft_lstclear.c \
-	    sources/linkedlist/ft_lstsize.c \
-		sources/memory/ft_bzero.c \
-		sources/memory/ft_calloc.c \
-	    sources/memory/ft_memchr.c \
-	    sources/memory/ft_memcmp.c \
-		sources/memory/ft_memcpy.c \
-		sources/memory/ft_memmove.c \
-		sources/memory/ft_memset.c \
-		sources/string/ft_split.c \
-	    sources/string/ft_strchr.c \
-		sources/string/ft_strdup.c \
-		sources/string/ft_striteri.c \
-		sources/string/ft_strjoin.c \
-		sources/string/ft_strlcat.c \
-		sources/string/ft_strlcpy.c \
-	    sources/string/ft_strlen.c \
-		sources/string/ft_strmapi.c \
-	    sources/string/ft_strncmp.c \
-	    sources/string/ft_strnstr.c \
-	    sources/string/ft_strrchr.c \
-		sources/string/ft_strtrim.c \
-		sources/string/ft_substr.c \
+SRCS = src/conversion/ft_atoi.c \
+		src/conversion/ft_itoa.c \
+		src/ctype/ft_isalnum.c \
+		src/ctype/ft_isalpha.c \
+		src/ctype/ft_isascii.c \
+		src/ctype/ft_isdigit.c \
+		src/ctype/ft_isprint.c \
+        src/ctype/ft_tolower.c \
+        src/ctype/ft_toupper.c \
+		src/io/ft_printf/ft_printf.c \
+		src/io/ft_printf/print_char.c \
+		src/io/ft_printf/print_nbr_base.c \
+		src/io/ft_printf/print_nbr_signed.c \
+		src/io/ft_printf/print_string.c \
+		src/io/get_next_line/get_next_line.c \
+		src/io/get_next_line/get_next_line_utils.c \
+		src/io/ft_putchar_fd.c \
+		src/io/ft_putendl_fd.c \
+	   	src/io/ft_putstr_fd.c \
+	    src/io/ft_putnbr_fd.c \
+		src/linkedlist/ft_lstadd_back.c \
+	    src/linkedlist/ft_lstadd_front.c \
+		src/linkedlist/ft_lstdelone.c \
+ 		src/linkedlist/ft_lstiter.c \
+		src/linkedlist/ft_lstlast.c \
+		src/linkedlist/ft_lstmap.c \
+	    src/linkedlist/ft_lstnew.c \
+		src/linkedlist/ft_lstclear.c \
+	    src/linkedlist/ft_lstsize.c \
+		src/memory/ft_bzero.c \
+		src/memory/ft_calloc.c \
+	    src/memory/ft_memchr.c \
+	    src/memory/ft_memcmp.c \
+		src/memory/ft_memcpy.c \
+		src/memory/ft_memmove.c \
+		src/memory/ft_memset.c \
+		src/string/ft_split.c \
+	    src/string/ft_strchr.c \
+		src/string/ft_strdup.c \
+		src/string/ft_striteri.c \
+		src/string/ft_strjoin.c \
+		src/string/ft_strlcat.c \
+		src/string/ft_strlcpy.c \
+	    src/string/ft_strlen.c \
+		src/string/ft_strmapi.c \
+	    src/string/ft_strncmp.c \
+	    src/string/ft_strnstr.c \
+	    src/string/ft_strrchr.c \
+		src/string/ft_strtrim.c \
+		src/string/ft_substr.c \
 
 # Variable assignment with pattern substitution:
 # Generate a list of object files 
