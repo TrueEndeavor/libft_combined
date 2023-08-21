@@ -6,7 +6,7 @@
 /*   By: lannur-s <lannur-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/02 12:46:47 by lannur-s          #+#    #+#             */
-/*   Updated: 2023/08/15 20:26:03 by lannur-s         ###   ########.fr       */
+/*   Updated: 2023/08/16 10:43:44 by lannur-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,6 @@ void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void(*del)(void *));
 
-char	**extract_paths_from_env(char **envp);
-void	get_shell_command_path(char *path, char *cmd);
+char	**ft_extract_paths_from_env(char **envp);
 
 #endif
